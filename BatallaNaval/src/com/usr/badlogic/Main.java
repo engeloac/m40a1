@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.usr.core;
+package com.usr.badlogic;
 
 import com.local.interfaces.TmainWindow;
 
@@ -23,7 +23,9 @@ public class Main {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
         frame.setTitle("Batalla Naval");
-        frame.setResizable(false);
+        frame.setResizable(false);/*
+        Thread hilo = new Threads("Proceso 1");
+        hilo.start();*/
     }
     
 }

@@ -4,16 +4,17 @@
  * and open the template in the editor.
  */
 package com.local.interfaces;
+
 /**
  *
  * @author Sammy Guergachi <sguergachi at gmail.com>
  */
-public class TgameWindow extends javax.swing.JFrame implements Runnable {
+public class TaboutWindow extends javax.swing.JFrame {
 
     /**
-     * Creates new form TgameWindow
+     * Creates new form TaboutWindow
      */
-    public TgameWindow() {
+    public TaboutWindow() {
         initComponents();
     }
 
@@ -59,42 +60,24 @@ public class TgameWindow extends javax.swing.JFrame implements Runnable {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TgameWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TaboutWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TgameWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TaboutWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TgameWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TaboutWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TgameWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TaboutWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
-        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TgameWindow().setVisible(true);
-                
+                new TaboutWindow().setVisible(true);
             }
         });
-        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
-    //User declaration
-    //End of user declaration
-
-    @Override
-    public void run() {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Hilo en ejecucion");
-    }
-    private void startThread() {
-        thread = new Thread(this,"Second thread");
-        thread.start();
-    }
-    //User declaration
-    private static Thread thread;
-    //End of user declaration
 }

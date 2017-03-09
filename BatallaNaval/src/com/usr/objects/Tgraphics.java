@@ -10,12 +10,6 @@ package com.usr.objects;
  * 
  * @author Sammy Guergachi <sguergachi at gmail.com>
  */
-public class Threads extends Thread{
-    public Threads(String msg) {
-        super(msg);
-    }
-    @Override
-    public void run() {
-        System.out.println("com.usr.badlogic.Threads.run()");
-    }
+public class Tgraphics {
+
 }

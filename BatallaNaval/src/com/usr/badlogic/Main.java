@@ -13,19 +13,28 @@ import com.local.interfaces.TmainWindow;
  * @author SirBobby
  */
 public class Main {
-
     /**
      * @param args the command line arguments
      */
+    public void openWindow() {
+        
+        
+    }
     public static void main(String[] args) {
-        // TODO code application logic here
+        int i =0;
         TmainWindow frame = new TmainWindow();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-        frame.setTitle("Batalla Naval");
-        frame.setResizable(false);/*
-        Thread hilo = new Threads("Proceso 1");
-        hilo.start();*/
+        boolean frameWindow = true;
+        boolean inGame = true;
+        
+        while(inGame) {
+            if(frameWindow) {
+                frame.setLocationRelativeTo(null);
+                frame.setVisible(true);
+                frame.setTitle("Batalla Naval");
+                frame.setResizable(false);
+                frameWindow = false;
+            }
+        }
     }
     
 }

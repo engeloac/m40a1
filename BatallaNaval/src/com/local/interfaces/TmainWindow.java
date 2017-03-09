@@ -6,7 +6,7 @@
 package com.local.interfaces;
 
 import com.usr.badlogic.TgameWindow;
-import com.usr.objects.Threads;
+import com.usr.objects.Tthreads;
 
 /**
  *
